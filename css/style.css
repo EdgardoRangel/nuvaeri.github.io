@@ -29,8 +29,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.9;
 	overflow-x: hidden !important;
-	position: center;
-	left: 15;
 }
 
 * {
@@ -60,12 +58,12 @@ h6 {
 	padding: 0 0 10px 0;
 	font-weight: normal;
 	line-height: 120% !important;
-	color: #1f1f1f;
+	color: #090a1d;
 	margin: 0
 }
 
 h1 {
-	font-size: 24px
+	font-size: 24px;
 }
 
 h2 {
@@ -78,7 +76,7 @@ h3 {
 
 h4 {
 	font-size: 21px;
-	color: #07528d;
+	color: #06004d;
 	margin-top: 25px;
 }
 
@@ -166,9 +164,9 @@ ol {
 	padding: 0px;
 }
 
-ul.conimagen,
-li.conimagen {
-display: block;
+ul_conimagen,
+ol_conimagen,
+li_conimagen{
 list-style-image:url("images/gotach.jpg");
 list-style-position:outside;
 }
@@ -484,7 +482,7 @@ a.join_bt:focus {
 .top-header {
     position: absolute;
     top: 0px;
-    left: 5px;
+    left: 0px;
     width: 100%;
     margin: 0;
     z-index: 20;
@@ -848,7 +846,7 @@ button#sidebarCollapse {
     padding: 0;
     text-transform: none;
     color: #272f43;
-    line-height: 75px !important;
+    line-height: 55px !important;
 }
 
 .slide_text p {
@@ -966,10 +964,10 @@ button#sidebarCollapse {
 
 .feature_box {
     height: auto;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,.10);
+    box-shadow: 5 5 15px 0 rgba(1,1,1,.19);
     padding: 20px;
     text-align: center;
-    transition: ease all 0.5s;
+    transition: ease all 0.7s;
 }
 
 .about_section {
@@ -981,6 +979,8 @@ button#sidebarCollapse {
    background: #fc301e;
 }
 
+.feature_box:hover h1,
+.feature_box:focus h1,
 .feature_box:hover h4,
 .feature_box:focus h4,
 .feature_box:hover p,
@@ -998,6 +998,11 @@ button#sidebarCollapse {
 	display: initial;
 }
 
+.feature_box h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
 .feature_box h4 {
     text-transform: uppercase;
     font-size: 20px;
@@ -1009,10 +1014,63 @@ button#sidebarCollapse {
     font-weight: 400;
 }
 
-ul.conimagen,
-li.conimagen {
+.feature_box2 {
+    height: auto;
+    box-shadow: 5 5 15px 0 rgba(2, 2, 2, 0.85);
+    padding: 20px;
+    text-align: center;
+    transition: ease all 0.9s;
+}
+
+.dark_blue_layout_section {
+    background: #f6f6f6;
+}
+
+.feature_box2:hover,
+.feature_box2:focus {
+   background: rgba(188, 16, 1, 0.9);
+}
+
+.feature_box2:hover h1,
+.feature_box2:focus h1,
+.feature_box2:hover h4,
+.feature_box2:focus h4,
+.feature_box2:hover p,
+.feature_box2:focus p {
+	color: #fff;
+}
+
+.feature_box2:hover img.default-block,
+.feature_box2:focus img.default-block {
+	display: none;
+}
+
+.feature_box2:hover img.default-none,
+.feature_box2:focus img.default-none {
+	display: initial;
+}
+
+.feature_box2 h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.feature_box2 h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.feature_box2 p {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+ul_conimagen,
+ol_conimagen,
+li_conimagen {
 display: block;
-list-style-image:url("images/gotach.jpg");
+list-style-image: url('../images/gotaico.png');
 list-style-position:outside;
 }
 
@@ -1397,7 +1455,13 @@ figure.effect-services:hover {
     color: #fff;
 }
 
-.services_list ul li img {
+.services_list_img ul li {
+    font-size: 32px;
+    text-transform: none;
+    color: darkred;
+}
+
+.services_list_ ul li img {
     position: relative;
     top: -2px;
     width: 30px;
@@ -2148,6 +2212,14 @@ p {
 	color: #666666;
 }
 
+.text_align_hyphens {
+	text-align: justify;
+	-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+	hyphens: auto;
+}
+
 .text_align_left_img img {
     float: left;
 }
@@ -2175,6 +2247,23 @@ p {
 .white_fonts div,
 .white_fonts a.read_more {
 	color: #fff !important;
+}
+
+.red_fonts p,
+.red_fonts h1,
+.red_fonts h2,
+.red_fonts h3,
+.red_fonts h4,
+.red_fonts h5,
+.red_fonts h6,
+.red_fonts ul,
+.red_fonts ul li,
+.red_fonts ul li a,
+.red_fonts ul i,
+.red_fonts .post_info i,
+.red_fonts div,
+.red_fonts a.read_more{
+	color: #390000 !important;
 }
 
 .red_bg .about-main-info a {
@@ -2209,8 +2298,8 @@ p {
 }
 
 .layout_padding {
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
 
 .heading_main h2 {
@@ -2454,13 +2543,14 @@ ul.social_icon li {
 }
 
 .dark_blue_layout {
-    background: #262e41;
+    background: rgb(255, 232, 232);
 }
 
 .readmore_bt {
     color: #fff;
     font-size: 17px;
     font-weight: 200;
+
     width: 200px;
     height: 65px;
     background: #272f43;
@@ -2482,6 +2572,15 @@ ul.social_icon li {
 .readmore_bt:hover,.readmore_bt:focus {
 	background-color: #fc301e;
 	color: #fff;
+}
+
+.footer-box p.crp a {
+	color: #fff;
+}
+
+.footer-box p.crp a:hover,
+.footer-box p.crp a:focus {
+	color: #fc3726;
 }
 
 .footer_bottom {
@@ -2941,9 +3040,9 @@ ul.bottom_menu li {
       padding: 0;
       min-height: 100vh;
       transition: all 0.3s;
+      position: relative;
       top: 0;
       right: 0;
-			left: 25;
       width: 100%;
     }
 
@@ -2954,9 +3053,22 @@ ul.bottom_menu li {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
+.decoration {
+	 text-decoration-color: aquamarine;
+	 text-decoration: blink;
+}
+
 .heading_main h2 strong.small {
     font-size: 30px;
     font-weight: 300;
+    line-height: 24px;
+}
+
+.heading_main h2 strong.small decoration {
+    font-size: 30px;
+    font-weight: 300;
+	  text-decoration: blink;
+    color: aquamarine;
     line-height: 24px;
 }
 
