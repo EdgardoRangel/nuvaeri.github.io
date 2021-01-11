@@ -1,4 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+@font-face {
+  font-family: 'optima_ltregular';
+  src: url('lte50019-webfont.woff2') format('woff2'),
+       url('lte50019-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 /* CENTERING */
 .centered {
   position: fixed;
@@ -10,7 +19,7 @@
 
 /* /end */
 body {
-  background-image: url(fondo1.jpg);
+  background-image: url(fondo3.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,40 +46,46 @@ h3 {
   background-size: cover;
 	border-bottom-left-radius: 20px 20px;
 	border-top-right-radius: 20px 20px;
-	box-shadow: 0px 5px 25px 5px #A8DFE0;
+	box-shadow: 0px 5px 25px 5px #a8dfe0;
 }
 .back h1, .back p, .back .font-a-icons {
   color: #000;
-  font-family: "Raleway";
+  font-family: "optima_ltregular""Raleway", ;
   margin-left: 30%;
   line-height: 90%;
 }
 .back h1 {
-  margin-top: 5%;
+  margin-top: 7%;
+  font-size: 3.1em;
+  font-weight: 100;
 }
+
 .back p {
-  font-size: 19px;
+  margin-top: 2%;
+  font-size: 2em;
+  font-weight: 350;
   padding-bottom: 15px;
-  width: 35%;
+  width: 45%;
   border-bottom: 2px solid #000;
+  bottom: 2em;
 }
 .back .bold {
   font-weight: bold;
 }
 .back .font-a-icons {
-  margin-top: 25px;
+  margin-top: 5%;
 }
-.back .font-a-icons .icon-group {
-  margin-top: 8px;
+.back .icon-group {
+  margin-top: 3%;
 }
 .back .font-a-icons span, .back .font-a-icons .link, .back .font-a-icons .fa, .back .font-a-icons a {
   color: #000;
 }
 .back .font-a-icons .fa {
-  font-size: 18px;
+  font-size: 1.3em;
 }
 .back .font-a-icons span, .back .font-a-icons a {
-  font-size: 16px;
+  font-size: 1.7em;
 }
 .back .font-a-icons a, .back .font-a-icons .website {
   text-decoration: blink;
@@ -86,16 +101,16 @@ h3 {
   height: 45px;
   width: 45px;
   padding: 5px;
-  top: 65px;
+  top: 40px;
   left: 40%;
   display: inline-block;
   border: 2px solid #f00;
   margin: 5px;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;  
   -moz-transition: all ease 0.5s;
-  transition: all ease 2s;
+  transition: all ease 1s;
 }
 .back .icon-box:hover {
   box-shadow: 5px 5px 9px 2px #6f0606;
@@ -107,7 +122,7 @@ h3 {
 /* THE FLIP EFFECT */
 /* entire container, keeps perspective */
 .flip-container {
-  perspective: 1000px;
+  perspective: 3000px;
 }
 
 /* flip the pane when hovered */
@@ -117,12 +132,12 @@ h3 {
 }
 
 .flip-container, .front, .back {
-  height: 350px;
-  width: 600px;
+  height: 400px;
+  width: 686px;
 }
 
 .flipper {
-  transition: 0.9s;
+  transition: 1.3s;
   transform-style: preserve-3d;
   position: relative;
 }
