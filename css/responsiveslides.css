@@ -2,7 +2,7 @@
 
 .rslides {
   position: relative;
-  list-style: none;
+  list-style-image:url(/images/gotaico.png);
   overflow: hidden;
   width: 100%;
   padding: 0;
@@ -12,7 +12,7 @@
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
-  display: none;
+  display: list-item;
   width: 100%;
   left: 0;
   top: 0;

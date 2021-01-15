@@ -182,7 +182,7 @@
 .pogoSlider-nav {
 	position: absolute;
 	padding: 0;
-	margin: 0;
+	margin-block-end: 0;
 	z-index: 10
 }
 
@@ -195,7 +195,7 @@
 }
 
 .pogoSlider--navTop .pogoSlider-nav {
-	top: 10px
+	top: 25px
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {

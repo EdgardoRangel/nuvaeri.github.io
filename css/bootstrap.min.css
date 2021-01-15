@@ -4057,7 +4057,7 @@ input[type=submit].btn-block {
 	border-color: #80bdff
 }
 
-.custom-file-input:lang(en) ~ .custom-file-label::after {
+.custom-file-input:lang(es-MX) ~ .custom-file-label::after {
 	content: "Browse"
 }
 

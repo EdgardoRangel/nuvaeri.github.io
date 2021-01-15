@@ -1,4 +1,4 @@
-/* only small desktops */
+j/* only small desktops */
 /* tablets */
 
 @media (min-width: 992px) and (max-width: 1500px) {
@@ -118,7 +118,7 @@
     }
     .search-box {
         top: 12px;
-        right: 15px; 
+        right: 15px;
     }
     .slide_text h3 strong {
          font-size: 65px;
@@ -126,7 +126,7 @@
          width: 100%;
          position: relative;
          left: -3px;
-    } 
+    }
     .slide_text h3 {
          font-size: 42px;
     }
@@ -252,13 +252,13 @@
     .contact_form {
        padding: 45px 35px 65px;
        margin: 142px 35px 0;
-    }     
+    }
     .pogoSlider-slide {
        background-size: auto 100%;
     }
    .slide_text h6 {
        font-size: 20px;
-    } 
+    }
    .slide_text h3 {
        line-height: normal !important;
     }
@@ -297,7 +297,7 @@ header #sidebarCollapse img {
 .footer_blog_last ul li {
     font-size: 25px;
     margin-right: 20px;
-} 
+}
 
 }
 
@@ -311,7 +311,7 @@ header #sidebarCollapse img {
         bottom: 5px;
     }
     .pogoSlider-slide {
-         background-size: auto 130% !important; 
+         background-size: auto 130% !important;
     }
     .site_information ul li:nth-child(1),
     .site_information ul li:nth-child(2) {
@@ -629,7 +629,7 @@ header #sidebarCollapse img {
     height: 30px;
     background: url('../images/das_bg.png');
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     right: 0;
     bottom: 60px;
@@ -684,7 +684,7 @@ header #sidebarCollapse img {
     height: 30px;
     background: url('../images/das_bg.png');
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     top: 40px;
     right: 30px;
@@ -748,4 +748,3 @@ form.news_submit_form .field button {
 }
 
 }
- 

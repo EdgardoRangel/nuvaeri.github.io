@@ -164,11 +164,14 @@ ol {
 	padding: 0px;
 }
 
-ul_conimagen,
-ol_conimagen,
-li_conimagen{
-list-style-image:url("images/gotach.jpg");
-list-style-position:outside;
+.ul_conimagen,
+.ol_conimagen,
+.li_conimagen{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-image:url("images/gotach.jpg");
+	list-style-position:outside;
 }
 
 button:focus {
@@ -391,23 +394,22 @@ a:hover,a:focus {
     content: "";
     display: block;
     position: absolute;
-    right: 0;
-    top: 100px;
-    right: 70px;
-
+    top: 10px;
+    right: 60px;
+	
 }
 
 .dash_bg:after {
 
-	  width: 92px;
+	width: 92px;
     height: 30px;
-    background: url('../images/das_bg.png');
+    background: url('../images/bg_das.png');
     content: "";
     display: block;
     position: absolute;
-    right: 0;
-	bottom: 100px;
-	left: 70px;
+	right: 0;
+	bottom: 15px;
+    left: 30px;
 
 }
 
@@ -814,7 +816,7 @@ button#sidebarCollapse {
 }
 
 .pogoSlider--navBottom .pogoSlider-nav {
-    bottom: 35px;
+    bottom: 25px;
 }
 
 .pogoSlider--dirCenterHorizontal .pogoSlider-dir-btn {
@@ -822,7 +824,7 @@ button#sidebarCollapse {
 }
 
 .img-responsive {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 .slide_text h3 {
@@ -1176,7 +1178,6 @@ list-style-position:outside;
 }
 
 .hvr-radial-out {
-	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -2114,11 +2115,6 @@ footer.footer-box h3 {
 	color: #e91327;
 }
 
-
-
-
-
-
 /*------------------------------------------------------------------ Subscribe -------------------------------------------------------------------*/
 
 .subscribe-box {
@@ -2297,7 +2293,7 @@ p {
 
 .layout_padding {
 	padding-top: 45px;
-	padding-bottom: 45px;
+	padding-bottom: 65px;
 }
 
 .heading_main h2 {
@@ -2548,7 +2544,6 @@ ul.social_icon li {
     color: #fff;
     font-size: 17px;
     font-weight: 200;
-
     width: 200px;
     height: 65px;
     background: #272f43;
@@ -2556,7 +2551,8 @@ ul.social_icon li {
     text-align: center;
     line-height: 65px;
     text-transform: uppercase;
-    position: relative;
+	position: relative;
+	top: 30px;
 }
 
 .readmore_bt i {
