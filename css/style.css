@@ -1253,21 +1253,41 @@ a.hvr-radial-out:focus {
 .services_blog h4 {
     font-weight: 600;
     text-transform: uppercase;
-	  text-align: match-parent;
+	text-align: match-parent;
     font-size: 18px;
     border-bottom: solid #222 1px;
     color: #222;
     margin-bottom: 15px;
 }
-.services p {
+
+.b{
+	font-size: 2em;
+}
+
+.services_h4{
+	font-size: 2em;
+}
+
+.services_frase {
+    float: left;
+    display: flex;
+    margin-bottom: 35px;
+    width: 100%;
+	justify-content: center;
+	font-weight: 600;
+	line-height: 120%;
+	color:rgb(110, 9, 0)
+}
+
+.services_p {
     font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
     font-size: 20px;
     font-weight: normal;
     font-style:normal;
     color: #000000;
-	  overflow: hidden;
+	overflow: hidden;
     background-color: #838383;
-	  line-height: 120% !important;
+	line-height: 120% !important;
     border-style: solid;
     border-color: transparent;
     border-width: 2px;
@@ -1355,24 +1375,6 @@ figure.effect-services h2 {
 	text-align: center;
 	font-family: 'Great Vibes', cursive;
 }
-
-@supports ((-webkit-hyphens:auto) or (hyphens:auto)) {
-
-	services.text {
-		@supports ((-webkit-hyphens:auto) or (hyphens:auto))
-		text-align: justify;
-		-webkit-hyphens: auto; /* A día de hoy aún es necesario el prefijo para soportar a Safari */
-		hyphens: auto;
-	}
-}
-
-	services.text-services p {
-		@supports ((-webkit-hyphens:auto) or (hyphens:auto))
-    size:35px;
-		text-align: justify;
-		-webkit-hyphens: auto; /* A día de hoy aún es necesario el prefijo para soportar a Safari */
-		hyphens: auto;
-	}
 
 figure.effect-services p {
 	padding: 10px;
